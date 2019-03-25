@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char **argv)
+{
+int data [8]={1,2,3,4,5,6,7,8},i,banyak_data,cari;
+
+    cout<<"input data yang dicari :";
+    cin>>cari;
+    
+    banyak_data=8;
+    //cari=7;
+    i=0;
+    
+    while (i<banyak_data && data[i] !=cari)
+    {
+        i = i+1;
+    }
+    if (data[i]==cari)
+    {
+        cout<< "data ketemu di indeks ke"<<i;
+    }
+    else
+    {
+        cout<<"data tidak ketemu"<<i;
+    }
+        
+        
+        
+	return 0;
+}
